@@ -1,6 +1,7 @@
 #pragma once
 #include "Login.h"
 #include "AddBook.h"
+#include "Recommendation.h"
 namespace Project {
 
 	using namespace System;
@@ -13,6 +14,8 @@ namespace Project {
 	ref class MainForm;
 	ref class Login;
 	ref class AddBook;
+	ref class Recommendation;
+	ref class BookBase;
 
 	/// <summary>
 	/// Сводка для MyForm
@@ -42,6 +45,8 @@ namespace Project {
 		}
 	public: Login^ login;
 	public: AddBook^ addbook;
+	public: Recommendation^ recommendation;
+	public: BookBase^ bookbase;
 	protected:
 
 	private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton2;
@@ -133,6 +138,7 @@ namespace Project {
 			this->bunifuThinButton3->Size = System::Drawing::Size(215, 60);
 			this->bunifuThinButton3->TabIndex = 4;
 			this->bunifuThinButton3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->bunifuThinButton3->Click += gcnew System::EventHandler(this, &MainForm::bunifuThinButton3_Click_1);
 			this->bunifuThinButton4->ActiveBorderThickness = 1;
 			this->bunifuThinButton4->ActiveCornerRadius = 20;
 			this->bunifuThinButton4->ActiveFillColor = System::Drawing::Color::Gainsboro;
@@ -182,6 +188,7 @@ namespace Project {
 			this->bunifuThinButton5->Size = System::Drawing::Size(215, 60);
 			this->bunifuThinButton5->TabIndex = 2;
 			this->bunifuThinButton5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->bunifuThinButton5->Click += gcnew System::EventHandler(this, &MainForm::bunifuThinButton5_Click);
 			this->bunifuThinButton6->ActiveBorderThickness = 1;
 			this->bunifuThinButton6->ActiveCornerRadius = 20;
 			this->bunifuThinButton6->ActiveFillColor = System::Drawing::Color::Gainsboro;
@@ -270,7 +277,9 @@ namespace Project {
 			this->Controls->Add(this->bunifuThinButton3);
 			this->Controls->Add(this->bunifuThinButton2);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::Fixed3D;
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MainForm";
+			this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -281,5 +290,12 @@ namespace Project {
 	private: System::Void bunifuImageButton1_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void bunifuThinButton6_Click(System::Object^ sender, System::EventArgs^ e) {this->Close();}
 	private: System::Void bunifuThinButton4_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void bunifuThinButton5_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void bunifuImageButton2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void MainForm_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void bunifuThinButton3_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void bunifuThinButton3_Click_1(System::Object^ sender, System::EventArgs^ e);
 };
 }

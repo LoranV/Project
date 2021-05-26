@@ -133,13 +133,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AddBook.cpp" />
+    <ClCompile Include="BookBase.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Recommendation.cpp" />
     <ClCompile Include="Search.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddBook.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="BookBase.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Login.h">
@@ -149,6 +154,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Recommendation.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Search.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -157,11 +165,17 @@
     <EmbeddedResource Include="AddBook.resx">
       <DependentUpon>AddBook.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BookBase.resx">
+      <DependentUpon>BookBase.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recommendation.resx">
+      <DependentUpon>Recommendation.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.h</DependentUpon>

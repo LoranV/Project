@@ -2,6 +2,7 @@
 #include "MainForm.h"
 #include "Login.h"
 #include "BookBase.h"
+#include "Search.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -31,7 +32,15 @@ namespace Project {
         bookbase = gcnew BookBase(this);
         bookbase->Show();
         this->Hide();
-}
+    }
+    System::Void MainForm::bunifuThinButton1_Click(System::Object^ sender, System::EventArgs^ e) {
+        search = gcnew Search();
+        search->Show();
+        this->Hide();
+    }
+    System::Void MainForm::bunifuThinButton6_Click(System::Object^ sender, System::EventArgs^ e) {
+        Project::Application::Exit();
+    }
 }
 
 [STAThreadAttribute]

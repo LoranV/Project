@@ -2,6 +2,8 @@
 #include "Login.h"
 #include "AddBook.h"
 #include "Recommendation.h"
+#include "BookBase.h"
+#include "Search.h"
 namespace Project {
 
 	using namespace System;
@@ -16,6 +18,7 @@ namespace Project {
 	ref class AddBook;
 	ref class Recommendation;
 	ref class BookBase;
+	ref class Search;
 
 	/// <summary>
 	/// Сводка для MyForm
@@ -47,9 +50,10 @@ namespace Project {
 	public: AddBook^ addbook;
 	public: Recommendation^ recommendation;
 	public: BookBase^ bookbase;
+	public: Search^ search;
 	protected:
 
-	private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton2;
+
 	private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton3;
 	private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton4;
 	private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton5;
@@ -80,7 +84,6 @@ namespace Project {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MainForm::typeid));
-			this->bunifuThinButton2 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
 			this->bunifuThinButton3 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
 			this->bunifuThinButton4 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
 			this->bunifuThinButton5 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
@@ -90,30 +93,6 @@ namespace Project {
 			this->bunifuThinButton1 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton1))->BeginInit();
 			this->SuspendLayout();
-			this->bunifuThinButton2->ActiveBorderThickness = 1;
-			this->bunifuThinButton2->ActiveCornerRadius = 20;
-			this->bunifuThinButton2->ActiveFillColor = System::Drawing::Color::Gainsboro;
-			this->bunifuThinButton2->ActiveForecolor = System::Drawing::Color::Black;
-			this->bunifuThinButton2->ActiveLineColor = System::Drawing::Color::Gray;
-			this->bunifuThinButton2->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->bunifuThinButton2->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->bunifuThinButton2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton2.BackgroundImage")));
-			this->bunifuThinButton2->ButtonText = L"Сортування";
-			this->bunifuThinButton2->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->bunifuThinButton2->Font = (gcnew System::Drawing::Font(L"Century Gothic", 14.25, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->bunifuThinButton2->ForeColor = System::Drawing::Color::SeaGreen;
-			this->bunifuThinButton2->IdleBorderThickness = 1;
-			this->bunifuThinButton2->IdleCornerRadius = 20;
-			this->bunifuThinButton2->IdleFillColor = System::Drawing::Color::Black;
-			this->bunifuThinButton2->IdleForecolor = System::Drawing::SystemColors::ControlLight;
-			this->bunifuThinButton2->IdleLineColor = System::Drawing::Color::Black;
-			this->bunifuThinButton2->Location = System::Drawing::Point(482, 191);
-			this->bunifuThinButton2->Margin = System::Windows::Forms::Padding(5);
-			this->bunifuThinButton2->Name = L"bunifuThinButton2";
-			this->bunifuThinButton2->Size = System::Drawing::Size(215, 60);
-			this->bunifuThinButton2->TabIndex = 5;
-			this->bunifuThinButton2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->bunifuThinButton3->ActiveBorderThickness = 1;
 			this->bunifuThinButton3->ActiveCornerRadius = 20;
 			this->bunifuThinButton3->ActiveFillColor = System::Drawing::Color::Gainsboro;
@@ -182,7 +161,7 @@ namespace Project {
 			this->bunifuThinButton5->IdleFillColor = System::Drawing::Color::Black;
 			this->bunifuThinButton5->IdleForecolor = System::Drawing::SystemColors::ControlLight;
 			this->bunifuThinButton5->IdleLineColor = System::Drawing::Color::Black;
-			this->bunifuThinButton5->Location = System::Drawing::Point(184, 393);
+			this->bunifuThinButton5->Location = System::Drawing::Point(482, 191);
 			this->bunifuThinButton5->Margin = System::Windows::Forms::Padding(5);
 			this->bunifuThinButton5->Name = L"bunifuThinButton5";
 			this->bunifuThinButton5->Size = System::Drawing::Size(215, 60);
@@ -207,7 +186,7 @@ namespace Project {
 			this->bunifuThinButton6->IdleFillColor = System::Drawing::Color::Black;
 			this->bunifuThinButton6->IdleForecolor = System::Drawing::SystemColors::ControlLight;
 			this->bunifuThinButton6->IdleLineColor = System::Drawing::Color::Black;
-			this->bunifuThinButton6->Location = System::Drawing::Point(482, 393);
+			this->bunifuThinButton6->Location = System::Drawing::Point(333, 393);
 			this->bunifuThinButton6->Margin = System::Windows::Forms::Padding(5);
 			this->bunifuThinButton6->Name = L"bunifuThinButton6";
 			this->bunifuThinButton6->Size = System::Drawing::Size(215, 60);
@@ -262,6 +241,7 @@ namespace Project {
 			this->bunifuThinButton1->Size = System::Drawing::Size(215, 60);
 			this->bunifuThinButton1->TabIndex = 9;
 			this->bunifuThinButton1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->bunifuThinButton1->Click += gcnew System::EventHandler(this, &MainForm::bunifuThinButton1_Click);
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
@@ -275,11 +255,9 @@ namespace Project {
 			this->Controls->Add(this->bunifuThinButton5);
 			this->Controls->Add(this->bunifuThinButton4);
 			this->Controls->Add(this->bunifuThinButton3);
-			this->Controls->Add(this->bunifuThinButton2);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::Fixed3D;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MainForm";
-			this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -288,14 +266,11 @@ namespace Project {
 #pragma endregion
 
 	private: System::Void bunifuImageButton1_Click(System::Object^ sender, System::EventArgs^ e);
-	private: System::Void bunifuThinButton6_Click(System::Object^ sender, System::EventArgs^ e) {this->Close();}
+	private: System::Void bunifuThinButton6_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void bunifuThinButton4_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void bunifuThinButton5_Click(System::Object^ sender, System::EventArgs^ e);
-private: System::Void bunifuImageButton2_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void MainForm_Load(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void bunifuThinButton3_Click(System::Object^ sender, System::EventArgs^ e);
-private: System::Void bunifuThinButton3_Click_1(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void bunifuThinButton3_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void bunifuThinButton3_Click_1(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void bunifuThinButton1_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }

@@ -112,8 +112,7 @@ namespace Project {
 				static_cast<System::Int32>(static_cast<System::Byte>(38)));
 			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(83)), static_cast<System::Int32>(static_cast<System::Byte>(47)),
-				static_cast<System::Int32>(static_cast<System::Byte>(38)));
+			dataGridViewCellStyle2->ForeColor = System::Drawing::SystemColors::ControlLight;
 			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::SystemColors::Highlight;
 			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
 			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
@@ -123,8 +122,7 @@ namespace Project {
 			this->bunifuCustomDataGrid1->EnableHeadersVisualStyles = false;
 			this->bunifuCustomDataGrid1->HeaderBgColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(63)),
 				static_cast<System::Int32>(static_cast<System::Byte>(47)), static_cast<System::Int32>(static_cast<System::Byte>(38)));
-			this->bunifuCustomDataGrid1->HeaderForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(83)),
-				static_cast<System::Int32>(static_cast<System::Byte>(47)), static_cast<System::Int32>(static_cast<System::Byte>(38)));
+			this->bunifuCustomDataGrid1->HeaderForeColor = System::Drawing::SystemColors::ControlLight;
 			this->bunifuCustomDataGrid1->Location = System::Drawing::Point(12, 124);
 			this->bunifuCustomDataGrid1->Name = L"bunifuCustomDataGrid1";
 			this->bunifuCustomDataGrid1->ReadOnly = true;

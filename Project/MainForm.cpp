@@ -39,7 +39,10 @@ namespace Project {
         this->Hide();
     }
     System::Void MainForm::bunifuThinButton6_Click(System::Object^ sender, System::EventArgs^ e) {
-        Project::Application::Exit();
+        rate = gcnew Rate();
+        rate->Show();
+        this->Hide();
+        //Project::Application::Exit();
     }
 }
 

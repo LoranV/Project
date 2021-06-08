@@ -137,6 +137,7 @@
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Rate.cpp" />
     <ClCompile Include="Recommendation.cpp" />
     <ClCompile Include="Search.cpp" />
   </ItemGroup>
@@ -154,6 +155,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Rate.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Recommendation.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -173,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rate.resx">
+      <DependentUpon>Rate.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Recommendation.resx">
       <DependentUpon>Recommendation.h</DependentUpon>

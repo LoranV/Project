@@ -302,7 +302,7 @@ private: System::Void bunifuThinButton23_Click(System::Object^ sender, System::E
 		{
 			MessageBox::Show(ex->Message);
 		}
-		con->Close(); //Don't forget to close the connection after Execute reader.
+		con->Close();
 
 
 

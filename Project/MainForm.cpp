@@ -28,21 +28,24 @@ namespace Project {
         bookbase->Show();
         this->Hide();
     }
-    System::Void MainForm::bunifuThinButton3_Click_1(System::Object^ sender, System::EventArgs^ e) {
-        bookbase = gcnew BookBase(this);
-        bookbase->Show();
-        this->Hide();
-    }
     System::Void MainForm::bunifuThinButton1_Click(System::Object^ sender, System::EventArgs^ e) {
         search = gcnew Search();
         search->Show();
         this->Hide();
     }
     System::Void MainForm::bunifuThinButton6_Click(System::Object^ sender, System::EventArgs^ e) {
-        rate = gcnew Rate();
-        rate->Show();
-        this->Hide();
-        //Project::Application::Exit();
+        System::Windows::Forms::DialogResult result = MessageBox::Show("Чи бажаєте ви оцінити програму?", "Закриття програми",
+            MessageBoxButtons::YesNo, MessageBoxIcon::Question);
+        if (result == System::Windows::Forms::DialogResult::Yes)
+        {
+            rate = gcnew Rate();
+            rate->Show();
+            this->Hide();
+        }
+        else
+        {
+            Project::Application::Exit();
+        }
     }
 }
 

@@ -66,9 +66,7 @@ namespace Project {
 			this->bunifuThinButton1 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
 			this->bunifuCustomTextbox1 = (gcnew WindowsFormsControlLibrary1::BunifuCustomTextbox());
 			this->SuspendLayout();
-			// 
-			// bunifuRating1
-			// 
+			this->bunifuRating1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->bunifuRating1->BackColor = System::Drawing::Color::Transparent;
 			this->bunifuRating1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(90)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
@@ -77,13 +75,10 @@ namespace Project {
 			this->bunifuRating1->Size = System::Drawing::Size(316, 50);
 			this->bunifuRating1->TabIndex = 0;
 			this->bunifuRating1->Value = 0;
-			// 
-			// label2
-			// 
 			this->label2->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::Color::Transparent;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Century Gothic", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label2->Font = (gcnew System::Drawing::Font(L"Century Gothic", 21.75, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label2->ForeColor = System::Drawing::SystemColors::ControlLightLight;
 			this->label2->Location = System::Drawing::Point(82, 37);
@@ -91,9 +86,6 @@ namespace Project {
 			this->label2->Size = System::Drawing::Size(230, 36);
 			this->label2->TabIndex = 10;
 			this->label2->Text = L"Залиште відгук";
-			// 
-			// bunifuThinButton1
-			// 
 			this->bunifuThinButton1->ActiveBorderThickness = 1;
 			this->bunifuThinButton1->ActiveCornerRadius = 20;
 			this->bunifuThinButton1->ActiveFillColor = System::Drawing::Color::Gainsboro;
@@ -104,7 +96,7 @@ namespace Project {
 			this->bunifuThinButton1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton1.BackgroundImage")));
 			this->bunifuThinButton1->ButtonText = L"Відправити";
 			this->bunifuThinButton1->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->bunifuThinButton1->Font = (gcnew System::Drawing::Font(L"Century Gothic", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->bunifuThinButton1->Font = (gcnew System::Drawing::Font(L"Century Gothic", 14.25, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->bunifuThinButton1->ForeColor = System::Drawing::Color::SeaShell;
 			this->bunifuThinButton1->IdleBorderThickness = 1;
@@ -119,9 +111,7 @@ namespace Project {
 			this->bunifuThinButton1->TabIndex = 12;
 			this->bunifuThinButton1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->bunifuThinButton1->Click += gcnew System::EventHandler(this, &Rate::bunifuThinButton1_Click);
-			// 
-			// bunifuCustomTextbox1
-			// 
+			this->bunifuCustomTextbox1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->bunifuCustomTextbox1->BorderColor = System::Drawing::Color::SeaGreen;
 			this->bunifuCustomTextbox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -130,9 +120,6 @@ namespace Project {
 			this->bunifuCustomTextbox1->Name = L"bunifuCustomTextbox1";
 			this->bunifuCustomTextbox1->Size = System::Drawing::Size(316, 236);
 			this->bunifuCustomTextbox1->TabIndex = 13;
-			// 
-			// Rate
-			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
@@ -143,6 +130,7 @@ namespace Project {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->bunifuRating1);
 			this->Name = L"Rate";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Rate";
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -173,8 +161,6 @@ private: System::Void bunifuThinButton1_Click(System::Object^ sender, System::Ev
 	}
 	con->Close();
 	Project::Application::Exit();
-
-
 }
 };
 }

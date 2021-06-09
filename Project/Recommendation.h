@@ -89,31 +89,6 @@ namespace Project {
 	private: Bunifu::Framework::UI::BunifuCustomLabel^ bunifuCustomLabel26;
 	private: Bunifu::Framework::UI::BunifuCustomLabel^ bunifuCustomLabel25;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	private:
 		/// <summary>
 		/// Обязательная переменная конструктора.
@@ -187,6 +162,9 @@ namespace Project {
 			this->panel2->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton2))->BeginInit();
 			this->SuspendLayout();
+			// 
+			// panel1
+			// 
 			this->panel1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(170)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)));
@@ -200,6 +178,9 @@ namespace Project {
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(676, 497);
 			this->panel1->TabIndex = 1;
+			// 
+			// panel5
+			// 
 			this->panel5->Controls->Add(this->bunifuCustomLabel13);
 			this->panel5->Controls->Add(this->bunifuCustomLabel14);
 			this->panel5->Controls->Add(this->bunifuCustomLabel15);
@@ -211,6 +192,9 @@ namespace Project {
 			this->panel5->Name = L"panel5";
 			this->panel5->Size = System::Drawing::Size(200, 195);
 			this->panel5->TabIndex = 9;
+			// 
+			// bunifuCustomLabel13
+			// 
 			this->bunifuCustomLabel13->AutoSize = true;
 			this->bunifuCustomLabel13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -220,6 +204,9 @@ namespace Project {
 			this->bunifuCustomLabel13->Size = System::Drawing::Size(128, 20);
 			this->bunifuCustomLabel13->TabIndex = 6;
 			this->bunifuCustomLabel13->Text = L"К-ть сторінок:";
+			// 
+			// bunifuCustomLabel14
+			// 
 			this->bunifuCustomLabel14->AutoSize = true;
 			this->bunifuCustomLabel14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -229,6 +216,9 @@ namespace Project {
 			this->bunifuCustomLabel14->Size = System::Drawing::Size(58, 20);
 			this->bunifuCustomLabel14->TabIndex = 5;
 			this->bunifuCustomLabel14->Text = L"Жанр:";
+			// 
+			// bunifuCustomLabel15
+			// 
 			this->bunifuCustomLabel15->AutoSize = true;
 			this->bunifuCustomLabel15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -238,6 +228,9 @@ namespace Project {
 			this->bunifuCustomLabel15->Size = System::Drawing::Size(66, 20);
 			this->bunifuCustomLabel15->TabIndex = 4;
 			this->bunifuCustomLabel15->Text = L"Автор:";
+			// 
+			// bunifuCustomLabel16
+			// 
 			this->bunifuCustomLabel16->AutoSize = true;
 			this->bunifuCustomLabel16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -247,6 +240,9 @@ namespace Project {
 			this->bunifuCustomLabel16->Size = System::Drawing::Size(36, 20);
 			this->bunifuCustomLabel16->TabIndex = 3;
 			this->bunifuCustomLabel16->Text = L"176";
+			// 
+			// bunifuCustomLabel40
+			// 
 			this->bunifuCustomLabel40->AutoSize = true;
 			this->bunifuCustomLabel40->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -256,6 +252,9 @@ namespace Project {
 			this->bunifuCustomLabel40->Size = System::Drawing::Size(92, 20);
 			this->bunifuCustomLabel40->TabIndex = 2;
 			this->bunifuCustomLabel40->Text = L"Психологія";
+			// 
+			// bunifuCustomLabel41
+			// 
 			this->bunifuCustomLabel41->AutoSize = true;
 			this->bunifuCustomLabel41->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -265,6 +264,9 @@ namespace Project {
 			this->bunifuCustomLabel41->Size = System::Drawing::Size(89, 20);
 			this->bunifuCustomLabel41->TabIndex = 1;
 			this->bunifuCustomLabel41->Text = L"Джон Кехо";
+			// 
+			// bunifuCustomLabel42
+			// 
 			this->bunifuCustomLabel42->AutoSize = true;
 			this->bunifuCustomLabel42->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -274,6 +276,9 @@ namespace Project {
 			this->bunifuCustomLabel42->Size = System::Drawing::Size(156, 50);
 			this->bunifuCustomLabel42->TabIndex = 0;
 			this->bunifuCustomLabel42->Text = L"Підсвідомості\r\nвсе підвладне";
+			// 
+			// panel6
+			// 
 			this->panel6->Controls->Add(this->bunifuCustomLabel17);
 			this->panel6->Controls->Add(this->bunifuCustomLabel18);
 			this->panel6->Controls->Add(this->bunifuCustomLabel19);
@@ -285,6 +290,9 @@ namespace Project {
 			this->panel6->Name = L"panel6";
 			this->panel6->Size = System::Drawing::Size(200, 195);
 			this->panel6->TabIndex = 8;
+			// 
+			// bunifuCustomLabel17
+			// 
 			this->bunifuCustomLabel17->AutoSize = true;
 			this->bunifuCustomLabel17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -294,6 +302,9 @@ namespace Project {
 			this->bunifuCustomLabel17->Size = System::Drawing::Size(128, 20);
 			this->bunifuCustomLabel17->TabIndex = 6;
 			this->bunifuCustomLabel17->Text = L"К-ть сторінок:";
+			// 
+			// bunifuCustomLabel18
+			// 
 			this->bunifuCustomLabel18->AutoSize = true;
 			this->bunifuCustomLabel18->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -303,6 +314,9 @@ namespace Project {
 			this->bunifuCustomLabel18->Size = System::Drawing::Size(58, 20);
 			this->bunifuCustomLabel18->TabIndex = 5;
 			this->bunifuCustomLabel18->Text = L"Жанр:";
+			// 
+			// bunifuCustomLabel19
+			// 
 			this->bunifuCustomLabel19->AutoSize = true;
 			this->bunifuCustomLabel19->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -312,6 +326,9 @@ namespace Project {
 			this->bunifuCustomLabel19->Size = System::Drawing::Size(66, 20);
 			this->bunifuCustomLabel19->TabIndex = 4;
 			this->bunifuCustomLabel19->Text = L"Автор:";
+			// 
+			// bunifuCustomLabel20
+			// 
 			this->bunifuCustomLabel20->AutoSize = true;
 			this->bunifuCustomLabel20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -321,6 +338,9 @@ namespace Project {
 			this->bunifuCustomLabel20->Size = System::Drawing::Size(36, 20);
 			this->bunifuCustomLabel20->TabIndex = 3;
 			this->bunifuCustomLabel20->Text = L"160";
+			// 
+			// bunifuCustomLabel37
+			// 
 			this->bunifuCustomLabel37->AutoSize = true;
 			this->bunifuCustomLabel37->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -330,6 +350,9 @@ namespace Project {
 			this->bunifuCustomLabel37->Size = System::Drawing::Size(145, 20);
 			this->bunifuCustomLabel37->TabIndex = 2;
 			this->bunifuCustomLabel37->Text = L"Літературна серія";
+			// 
+			// bunifuCustomLabel38
+			// 
 			this->bunifuCustomLabel38->AutoSize = true;
 			this->bunifuCustomLabel38->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -339,6 +362,9 @@ namespace Project {
 			this->bunifuCustomLabel38->Size = System::Drawing::Size(108, 20);
 			this->bunifuCustomLabel38->TabIndex = 1;
 			this->bunifuCustomLabel38->Text = L"Эрин Хантер";
+			// 
+			// bunifuCustomLabel39
+			// 
 			this->bunifuCustomLabel39->AutoSize = true;
 			this->bunifuCustomLabel39->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -348,6 +374,9 @@ namespace Project {
 			this->bunifuCustomLabel39->Size = System::Drawing::Size(128, 25);
 			this->bunifuCustomLabel39->TabIndex = 0;
 			this->bunifuCustomLabel39->Text = L"Коти-вояки";
+			// 
+			// panel4
+			// 
 			this->panel4->Controls->Add(this->bunifuCustomLabel12);
 			this->panel4->Controls->Add(this->bunifuCustomLabel21);
 			this->panel4->Controls->Add(this->bunifuCustomLabel22);
@@ -359,6 +388,9 @@ namespace Project {
 			this->panel4->Name = L"panel4";
 			this->panel4->Size = System::Drawing::Size(200, 195);
 			this->panel4->TabIndex = 7;
+			// 
+			// bunifuCustomLabel12
+			// 
 			this->bunifuCustomLabel12->AutoSize = true;
 			this->bunifuCustomLabel12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -368,6 +400,9 @@ namespace Project {
 			this->bunifuCustomLabel12->Size = System::Drawing::Size(128, 20);
 			this->bunifuCustomLabel12->TabIndex = 6;
 			this->bunifuCustomLabel12->Text = L"К-ть сторінок:";
+			// 
+			// bunifuCustomLabel21
+			// 
 			this->bunifuCustomLabel21->AutoSize = true;
 			this->bunifuCustomLabel21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -377,6 +412,9 @@ namespace Project {
 			this->bunifuCustomLabel21->Size = System::Drawing::Size(58, 20);
 			this->bunifuCustomLabel21->TabIndex = 5;
 			this->bunifuCustomLabel21->Text = L"Жанр:";
+			// 
+			// bunifuCustomLabel22
+			// 
 			this->bunifuCustomLabel22->AutoSize = true;
 			this->bunifuCustomLabel22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -386,6 +424,9 @@ namespace Project {
 			this->bunifuCustomLabel22->Size = System::Drawing::Size(66, 20);
 			this->bunifuCustomLabel22->TabIndex = 4;
 			this->bunifuCustomLabel22->Text = L"Автор:";
+			// 
+			// bunifuCustomLabel23
+			// 
 			this->bunifuCustomLabel23->AutoSize = true;
 			this->bunifuCustomLabel23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -395,6 +436,9 @@ namespace Project {
 			this->bunifuCustomLabel23->Size = System::Drawing::Size(36, 20);
 			this->bunifuCustomLabel23->TabIndex = 3;
 			this->bunifuCustomLabel23->Text = L"160";
+			// 
+			// bunifuCustomLabel24
+			// 
 			this->bunifuCustomLabel24->AutoSize = true;
 			this->bunifuCustomLabel24->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -404,6 +448,9 @@ namespace Project {
 			this->bunifuCustomLabel24->Size = System::Drawing::Size(139, 20);
 			this->bunifuCustomLabel24->TabIndex = 2;
 			this->bunifuCustomLabel24->Text = L"Пригоди/Мюзикл";
+			// 
+			// bunifuCustomLabel35
+			// 
 			this->bunifuCustomLabel35->AutoSize = true;
 			this->bunifuCustomLabel35->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -413,6 +460,9 @@ namespace Project {
 			this->bunifuCustomLabel35->Size = System::Drawing::Size(98, 60);
 			this->bunifuCustomLabel35->TabIndex = 1;
 			this->bunifuCustomLabel35->Text = L"Бромберг\r\nКостянтин \r\nЛеонідович";
+			// 
+			// bunifuCustomLabel36
+			// 
 			this->bunifuCustomLabel36->AutoSize = true;
 			this->bunifuCustomLabel36->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -422,6 +472,9 @@ namespace Project {
 			this->bunifuCustomLabel36->Size = System::Drawing::Size(138, 50);
 			this->bunifuCustomLabel36->TabIndex = 0;
 			this->bunifuCustomLabel36->Text = L"Пригоди\r\nЕлектроніка";
+			// 
+			// panel3
+			// 
 			this->panel3->Controls->Add(this->bunifuCustomLabel5);
 			this->panel3->Controls->Add(this->bunifuCustomLabel6);
 			this->panel3->Controls->Add(this->bunifuCustomLabel7);
@@ -433,6 +486,9 @@ namespace Project {
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(200, 195);
 			this->panel3->TabIndex = 8;
+			// 
+			// bunifuCustomLabel5
+			// 
 			this->bunifuCustomLabel5->AutoSize = true;
 			this->bunifuCustomLabel5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -442,6 +498,9 @@ namespace Project {
 			this->bunifuCustomLabel5->Size = System::Drawing::Size(128, 20);
 			this->bunifuCustomLabel5->TabIndex = 6;
 			this->bunifuCustomLabel5->Text = L"К-ть сторінок:";
+			// 
+			// bunifuCustomLabel6
+			// 
 			this->bunifuCustomLabel6->AutoSize = true;
 			this->bunifuCustomLabel6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -451,6 +510,9 @@ namespace Project {
 			this->bunifuCustomLabel6->Size = System::Drawing::Size(58, 20);
 			this->bunifuCustomLabel6->TabIndex = 5;
 			this->bunifuCustomLabel6->Text = L"Жанр:";
+			// 
+			// bunifuCustomLabel7
+			// 
 			this->bunifuCustomLabel7->AutoSize = true;
 			this->bunifuCustomLabel7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -460,6 +522,9 @@ namespace Project {
 			this->bunifuCustomLabel7->Size = System::Drawing::Size(66, 20);
 			this->bunifuCustomLabel7->TabIndex = 4;
 			this->bunifuCustomLabel7->Text = L"Автор:";
+			// 
+			// bunifuCustomLabel8
+			// 
 			this->bunifuCustomLabel8->AutoSize = true;
 			this->bunifuCustomLabel8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -469,6 +534,9 @@ namespace Project {
 			this->bunifuCustomLabel8->Size = System::Drawing::Size(36, 20);
 			this->bunifuCustomLabel8->TabIndex = 3;
 			this->bunifuCustomLabel8->Text = L"240";
+			// 
+			// bunifuCustomLabel9
+			// 
 			this->bunifuCustomLabel9->AutoSize = true;
 			this->bunifuCustomLabel9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -478,6 +546,9 @@ namespace Project {
 			this->bunifuCustomLabel9->Size = System::Drawing::Size(103, 40);
 			this->bunifuCustomLabel9->TabIndex = 2;
 			this->bunifuCustomLabel9->Text = L"Дитячий\r\nФантастика";
+			// 
+			// bunifuCustomLabel10
+			// 
 			this->bunifuCustomLabel10->AutoSize = true;
 			this->bunifuCustomLabel10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -487,6 +558,9 @@ namespace Project {
 			this->bunifuCustomLabel10->Size = System::Drawing::Size(102, 20);
 			this->bunifuCustomLabel10->TabIndex = 1;
 			this->bunifuCustomLabel10->Text = L"Роальд Дал";
+			// 
+			// bunifuCustomLabel11
+			// 
 			this->bunifuCustomLabel11->AutoSize = true;
 			this->bunifuCustomLabel11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -496,6 +570,9 @@ namespace Project {
 			this->bunifuCustomLabel11->Size = System::Drawing::Size(196, 50);
 			this->bunifuCustomLabel11->TabIndex = 0;
 			this->bunifuCustomLabel11->Text = L"Чарлі і шоколадна\r\nфабрика";
+			// 
+			// panel8
+			// 
 			this->panel8->Controls->Add(this->bunifuCustomLabel28);
 			this->panel8->Controls->Add(this->bunifuCustomLabel29);
 			this->panel8->Controls->Add(this->bunifuCustomLabel30);
@@ -507,6 +584,9 @@ namespace Project {
 			this->panel8->Name = L"panel8";
 			this->panel8->Size = System::Drawing::Size(200, 195);
 			this->panel8->TabIndex = 7;
+			// 
+			// bunifuCustomLabel28
+			// 
 			this->bunifuCustomLabel28->AutoSize = true;
 			this->bunifuCustomLabel28->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -516,6 +596,9 @@ namespace Project {
 			this->bunifuCustomLabel28->Size = System::Drawing::Size(128, 20);
 			this->bunifuCustomLabel28->TabIndex = 6;
 			this->bunifuCustomLabel28->Text = L"К-ть сторінок:";
+			// 
+			// bunifuCustomLabel29
+			// 
 			this->bunifuCustomLabel29->AutoSize = true;
 			this->bunifuCustomLabel29->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -525,6 +608,9 @@ namespace Project {
 			this->bunifuCustomLabel29->Size = System::Drawing::Size(58, 20);
 			this->bunifuCustomLabel29->TabIndex = 5;
 			this->bunifuCustomLabel29->Text = L"Жанр:";
+			// 
+			// bunifuCustomLabel30
+			// 
 			this->bunifuCustomLabel30->AutoSize = true;
 			this->bunifuCustomLabel30->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -534,6 +620,9 @@ namespace Project {
 			this->bunifuCustomLabel30->Size = System::Drawing::Size(66, 20);
 			this->bunifuCustomLabel30->TabIndex = 4;
 			this->bunifuCustomLabel30->Text = L"Автор:";
+			// 
+			// bunifuCustomLabel31
+			// 
 			this->bunifuCustomLabel31->AutoSize = true;
 			this->bunifuCustomLabel31->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -543,6 +632,9 @@ namespace Project {
 			this->bunifuCustomLabel31->Size = System::Drawing::Size(49, 20);
 			this->bunifuCustomLabel31->TabIndex = 3;
 			this->bunifuCustomLabel31->Text = L"1 138";
+			// 
+			// bunifuCustomLabel32
+			// 
 			this->bunifuCustomLabel32->AutoSize = true;
 			this->bunifuCustomLabel32->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -552,6 +644,9 @@ namespace Project {
 			this->bunifuCustomLabel32->Size = System::Drawing::Size(106, 20);
 			this->bunifuCustomLabel32->TabIndex = 2;
 			this->bunifuCustomLabel32->Text = L"Жахи/Трилер";
+			// 
+			// bunifuCustomLabel33
+			// 
 			this->bunifuCustomLabel33->AutoSize = true;
 			this->bunifuCustomLabel33->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
@@ -561,6 +656,9 @@ namespace Project {
 			this->bunifuCustomLabel33->Size = System::Drawing::Size(92, 20);
 			this->bunifuCustomLabel33->TabIndex = 1;
 			this->bunifuCustomLabel33->Text = L"Стівен Кінг";
+			// 
+			// bunifuCustomLabel34
+			// 
 			this->bunifuCustomLabel34->AutoSize = true;
 			this->bunifuCustomLabel34->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -570,6 +668,9 @@ namespace Project {
 			this->bunifuCustomLabel34->Size = System::Drawing::Size(61, 25);
 			this->bunifuCustomLabel34->TabIndex = 0;
 			this->bunifuCustomLabel34->Text = L"Воно";
+			// 
+			// panel2
+			// 
 			this->panel2->Controls->Add(this->bunifuCustomLabel27);
 			this->panel2->Controls->Add(this->bunifuCustomLabel26);
 			this->panel2->Controls->Add(this->bunifuCustomLabel25);
@@ -581,6 +682,9 @@ namespace Project {
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(200, 195);
 			this->panel2->TabIndex = 0;
+			// 
+			// bunifuCustomLabel27
+			// 
 			this->bunifuCustomLabel27->AutoSize = true;
 			this->bunifuCustomLabel27->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -590,6 +694,9 @@ namespace Project {
 			this->bunifuCustomLabel27->Size = System::Drawing::Size(128, 20);
 			this->bunifuCustomLabel27->TabIndex = 6;
 			this->bunifuCustomLabel27->Text = L"К-ть сторінок:";
+			// 
+			// bunifuCustomLabel26
+			// 
 			this->bunifuCustomLabel26->AutoSize = true;
 			this->bunifuCustomLabel26->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -599,6 +706,9 @@ namespace Project {
 			this->bunifuCustomLabel26->Size = System::Drawing::Size(58, 20);
 			this->bunifuCustomLabel26->TabIndex = 5;
 			this->bunifuCustomLabel26->Text = L"Жанр:";
+			// 
+			// bunifuCustomLabel25
+			// 
 			this->bunifuCustomLabel25->AutoSize = true;
 			this->bunifuCustomLabel25->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -608,6 +718,9 @@ namespace Project {
 			this->bunifuCustomLabel25->Size = System::Drawing::Size(66, 20);
 			this->bunifuCustomLabel25->TabIndex = 4;
 			this->bunifuCustomLabel25->Text = L"Автор:";
+			// 
+			// bunifuCustomLabel4
+			// 
 			this->bunifuCustomLabel4->AutoSize = true;
 			this->bunifuCustomLabel4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -617,6 +730,9 @@ namespace Project {
 			this->bunifuCustomLabel4->Size = System::Drawing::Size(36, 20);
 			this->bunifuCustomLabel4->TabIndex = 3;
 			this->bunifuCustomLabel4->Text = L"320";
+			// 
+			// bunifuCustomLabel3
+			// 
 			this->bunifuCustomLabel3->AutoSize = true;
 			this->bunifuCustomLabel3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -626,6 +742,9 @@ namespace Project {
 			this->bunifuCustomLabel3->Size = System::Drawing::Size(58, 20);
 			this->bunifuCustomLabel3->TabIndex = 2;
 			this->bunifuCustomLabel3->Text = L"Комікс";
+			// 
+			// bunifuCustomLabel2
+			// 
 			this->bunifuCustomLabel2->AutoSize = true;
 			this->bunifuCustomLabel2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -635,6 +754,9 @@ namespace Project {
 			this->bunifuCustomLabel2->Size = System::Drawing::Size(129, 20);
 			this->bunifuCustomLabel2->TabIndex = 1;
 			this->bunifuCustomLabel2->Text = L"Chugong, DUBU";
+			// 
+			// bunifuCustomLabel1
+			// 
 			this->bunifuCustomLabel1->AutoSize = true;
 			this->bunifuCustomLabel1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -644,6 +766,9 @@ namespace Project {
 			this->bunifuCustomLabel1->Size = System::Drawing::Size(168, 50);
 			this->bunifuCustomLabel1->TabIndex = 0;
 			this->bunifuCustomLabel1->Text = L"Тільки я візьму\r\nновий рівень";
+			// 
+			// bunifuImageButton2
+			// 
 			this->bunifuImageButton2->BackColor = System::Drawing::Color::Transparent;
 			this->bunifuImageButton2->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->bunifuImageButton2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuImageButton2.Image")));
@@ -656,6 +781,9 @@ namespace Project {
 			this->bunifuImageButton2->TabStop = false;
 			this->bunifuImageButton2->Zoom = 0;
 			this->bunifuImageButton2->Click += gcnew System::EventHandler(this, &Recommendation::bunifuImageButton2_Click);
+			// 
+			// Recommendation
+			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
@@ -664,6 +792,7 @@ namespace Project {
 			this->Controls->Add(this->bunifuImageButton2);
 			this->Controls->Add(this->panel1);
 			this->Name = L"Recommendation";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Recommendation";
 			this->panel1->ResumeLayout(false);
 			this->panel5->ResumeLayout(false);

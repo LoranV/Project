@@ -12,7 +12,7 @@ namespace Project {
 	using namespace System::Drawing;
 	using namespace MySql::Data::MySqlClient;
 
-	//ref class MainForm;
+	ref class MainForm;
 
 	/// <summary>
 	/// Сводка для BookBase
@@ -78,9 +78,6 @@ namespace Project {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuCustomDataGrid1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton1))->BeginInit();
 			this->SuspendLayout();
-			// 
-			// label1
-			// 
 			this->label1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::Transparent;
@@ -92,9 +89,6 @@ namespace Project {
 			this->label1->Size = System::Drawing::Size(341, 78);
 			this->label1->TabIndex = 9;
 			this->label1->Text = L"База Книг";
-			// 
-			// bunifuCustomDataGrid1
-			// 
 			this->bunifuCustomDataGrid1->AllowUserToAddRows = false;
 			this->bunifuCustomDataGrid1->AllowUserToDeleteRows = false;
 			this->bunifuCustomDataGrid1->AllowUserToResizeColumns = false;
@@ -129,9 +123,6 @@ namespace Project {
 			this->bunifuCustomDataGrid1->RowHeadersBorderStyle = System::Windows::Forms::DataGridViewHeaderBorderStyle::None;
 			this->bunifuCustomDataGrid1->Size = System::Drawing::Size(860, 385);
 			this->bunifuCustomDataGrid1->TabIndex = 10;
-			// 
-			// bunifuImageButton1
-			// 
 			this->bunifuImageButton1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->bunifuImageButton1->BackColor = System::Drawing::Color::Transparent;
 			this->bunifuImageButton1->Cursor = System::Windows::Forms::Cursors::Hand;
@@ -145,9 +136,6 @@ namespace Project {
 			this->bunifuImageButton1->TabStop = false;
 			this->bunifuImageButton1->Zoom = 0;
 			this->bunifuImageButton1->Click += gcnew System::EventHandler(this, &BookBase::bunifuImageButton1_Click);
-			// 
-			// BookBase
-			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
@@ -158,6 +146,7 @@ namespace Project {
 			this->Controls->Add(this->label1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"BookBase";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"BookBase";
 			this->Load += gcnew System::EventHandler(this, &BookBase::BookBase_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuCustomDataGrid1))->EndInit();

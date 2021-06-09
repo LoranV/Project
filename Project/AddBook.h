@@ -11,7 +11,7 @@ namespace Project {
 	using namespace System::Drawing;
 	using namespace MySql::Data::MySqlClient;
 
-	//ref class MainForm;
+	ref class MainForm;
 
 	/// <summary>
 	/// Сводка для AddBook
@@ -87,6 +87,9 @@ namespace Project {
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton2))->BeginInit();
 			this->SuspendLayout();
+			// 
+			// panel1
+			// 
 			this->panel1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(170)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)));
@@ -104,6 +107,9 @@ namespace Project {
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(481, 497);
 			this->panel1->TabIndex = 1;
+			// 
+			// bunifuTextbox4
+			// 
 			this->bunifuTextbox4->BackColor = System::Drawing::Color::Silver;
 			this->bunifuTextbox4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuTextbox4.BackgroundImage")));
 			this->bunifuTextbox4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
@@ -118,10 +124,13 @@ namespace Project {
 			this->bunifuTextbox4->Size = System::Drawing::Size(250, 48);
 			this->bunifuTextbox4->TabIndex = 14;
 			this->bunifuTextbox4->text = L"Pages";
+			// 
+			// bunifuCustomLabel5
+			// 
 			this->bunifuCustomLabel5->AutoSize = true;
 			this->bunifuCustomLabel5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->bunifuCustomLabel5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75, System::Drawing::FontStyle::Regular,
+			this->bunifuCustomLabel5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->bunifuCustomLabel5->ForeColor = System::Drawing::Color::Silver;
 			this->bunifuCustomLabel5->Location = System::Drawing::Point(4, 359);
@@ -129,6 +138,9 @@ namespace Project {
 			this->bunifuCustomLabel5->Size = System::Drawing::Size(151, 25);
 			this->bunifuCustomLabel5->TabIndex = 13;
 			this->bunifuCustomLabel5->Text = L"К-ть сторінок:";
+			// 
+			// bunifuTextbox3
+			// 
 			this->bunifuTextbox3->BackColor = System::Drawing::Color::Silver;
 			this->bunifuTextbox3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuTextbox3.BackgroundImage")));
 			this->bunifuTextbox3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
@@ -143,10 +155,13 @@ namespace Project {
 			this->bunifuTextbox3->Size = System::Drawing::Size(250, 48);
 			this->bunifuTextbox3->TabIndex = 12;
 			this->bunifuTextbox3->text = L"Genre";
+			// 
+			// bunifuCustomLabel4
+			// 
 			this->bunifuCustomLabel4->AutoSize = true;
 			this->bunifuCustomLabel4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->bunifuCustomLabel4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75, System::Drawing::FontStyle::Regular,
+			this->bunifuCustomLabel4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->bunifuCustomLabel4->ForeColor = System::Drawing::Color::Silver;
 			this->bunifuCustomLabel4->Location = System::Drawing::Point(4, 289);
@@ -154,6 +169,9 @@ namespace Project {
 			this->bunifuCustomLabel4->Size = System::Drawing::Size(154, 25);
 			this->bunifuCustomLabel4->TabIndex = 11;
 			this->bunifuCustomLabel4->Text = L"Введіть Жанр:";
+			// 
+			// bunifuThinButton23
+			// 
 			this->bunifuThinButton23->ActiveBorderThickness = 1;
 			this->bunifuThinButton23->ActiveCornerRadius = 20;
 			this->bunifuThinButton23->ActiveFillColor = System::Drawing::Color::Gainsboro;
@@ -165,7 +183,7 @@ namespace Project {
 			this->bunifuThinButton23->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton23.BackgroundImage")));
 			this->bunifuThinButton23->ButtonText = L"Додати книгу";
 			this->bunifuThinButton23->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->bunifuThinButton23->Font = (gcnew System::Drawing::Font(L"Century Gothic", 15.75, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->bunifuThinButton23->Font = (gcnew System::Drawing::Font(L"Century Gothic", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->bunifuThinButton23->ForeColor = System::Drawing::Color::SeaGreen;
 			this->bunifuThinButton23->IdleBorderThickness = 1;
@@ -182,10 +200,13 @@ namespace Project {
 			this->bunifuThinButton23->TabIndex = 10;
 			this->bunifuThinButton23->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->bunifuThinButton23->Click += gcnew System::EventHandler(this, &AddBook::bunifuThinButton23_Click);
+			// 
+			// bunifuCustomLabel3
+			// 
 			this->bunifuCustomLabel3->AutoSize = true;
 			this->bunifuCustomLabel3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->bunifuCustomLabel3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75, System::Drawing::FontStyle::Regular,
+			this->bunifuCustomLabel3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->bunifuCustomLabel3->ForeColor = System::Drawing::Color::Silver;
 			this->bunifuCustomLabel3->Location = System::Drawing::Point(4, 212);
@@ -193,10 +214,13 @@ namespace Project {
 			this->bunifuCustomLabel3->Size = System::Drawing::Size(170, 25);
 			this->bunifuCustomLabel3->TabIndex = 8;
 			this->bunifuCustomLabel3->Text = L"Введіть Автора:";
+			// 
+			// bunifuCustomLabel2
+			// 
 			this->bunifuCustomLabel2->AutoSize = true;
 			this->bunifuCustomLabel2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->bunifuCustomLabel2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75, System::Drawing::FontStyle::Regular,
+			this->bunifuCustomLabel2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->bunifuCustomLabel2->ForeColor = System::Drawing::Color::Silver;
 			this->bunifuCustomLabel2->Location = System::Drawing::Point(4, 137);
@@ -204,6 +228,9 @@ namespace Project {
 			this->bunifuCustomLabel2->Size = System::Drawing::Size(159, 25);
 			this->bunifuCustomLabel2->TabIndex = 7;
 			this->bunifuCustomLabel2->Text = L"Введіть Назву:";
+			// 
+			// bunifuTextbox2
+			// 
 			this->bunifuTextbox2->BackColor = System::Drawing::Color::Silver;
 			this->bunifuTextbox2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuTextbox2.BackgroundImage")));
 			this->bunifuTextbox2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
@@ -218,6 +245,9 @@ namespace Project {
 			this->bunifuTextbox2->Size = System::Drawing::Size(250, 48);
 			this->bunifuTextbox2->TabIndex = 6;
 			this->bunifuTextbox2->text = L"Autor";
+			// 
+			// bunifuTextbox1
+			// 
 			this->bunifuTextbox1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->bunifuTextbox1->BackColor = System::Drawing::Color::Silver;
 			this->bunifuTextbox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuTextbox1.BackgroundImage")));
@@ -234,6 +264,9 @@ namespace Project {
 			this->bunifuTextbox1->Size = System::Drawing::Size(250, 48);
 			this->bunifuTextbox1->TabIndex = 5;
 			this->bunifuTextbox1->text = L"Name";
+			// 
+			// bunifuCustomLabel1
+			// 
 			this->bunifuCustomLabel1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->bunifuCustomLabel1->AutoSize = true;
 			this->bunifuCustomLabel1->BackColor = System::Drawing::Color::Transparent;
@@ -245,6 +278,9 @@ namespace Project {
 			this->bunifuCustomLabel1->Size = System::Drawing::Size(446, 55);
 			this->bunifuCustomLabel1->TabIndex = 0;
 			this->bunifuCustomLabel1->Text = L"Добавлення Книги";
+			// 
+			// bunifuImageButton2
+			// 
 			this->bunifuImageButton2->BackColor = System::Drawing::Color::Transparent;
 			this->bunifuImageButton2->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->bunifuImageButton2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuImageButton2.Image")));
@@ -257,6 +293,9 @@ namespace Project {
 			this->bunifuImageButton2->TabStop = false;
 			this->bunifuImageButton2->Zoom = 0;
 			this->bunifuImageButton2->Click += gcnew System::EventHandler(this, &AddBook::bunifuImageButton2_Click);
+			// 
+			// AddBook
+			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
@@ -265,6 +304,7 @@ namespace Project {
 			this->Controls->Add(this->bunifuImageButton2);
 			this->Controls->Add(this->panel1);
 			this->Name = L"AddBook";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"AddBook";
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();

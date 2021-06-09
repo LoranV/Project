@@ -12,7 +12,7 @@ namespace Project {
 	using namespace System::Drawing;
 	using namespace MySql::Data::MySqlClient;
 
-	//ref class MainForm;
+	ref class MainForm;
 
 	/// <summary>
 	/// Сводка для BookBase

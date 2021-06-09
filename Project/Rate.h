@@ -143,6 +143,7 @@ namespace Project {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->bunifuRating1);
 			this->Name = L"Rate";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Rate";
 			this->ResumeLayout(false);
 			this->PerformLayout();

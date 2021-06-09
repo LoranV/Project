@@ -129,7 +129,7 @@ namespace Project {
 			this->bunifuThinButton4->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->bunifuThinButton4->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->bunifuThinButton4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton4.BackgroundImage")));
-			this->bunifuThinButton4->ButtonText = L"Add";
+			this->bunifuThinButton4->ButtonText = L"Додати книгу";
 			this->bunifuThinButton4->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->bunifuThinButton4->Font = (gcnew System::Drawing::Font(L"Century Gothic", 14.25, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -154,7 +154,7 @@ namespace Project {
 			this->bunifuThinButton5->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->bunifuThinButton5->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->bunifuThinButton5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton5.BackgroundImage")));
-			this->bunifuThinButton5->ButtonText = L"Rec";
+			this->bunifuThinButton5->ButtonText = L"Рекомендації";
 			this->bunifuThinButton5->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->bunifuThinButton5->Font = (gcnew System::Drawing::Font(L"Century Gothic", 14.25, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -260,6 +260,7 @@ namespace Project {
 			this->Controls->Add(this->bunifuThinButton3);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::Fixed3D;
 			this->Name = L"MainForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton1))->EndInit();
 			this->ResumeLayout(false);

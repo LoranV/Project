@@ -285,27 +285,43 @@ private: System::Void bunifuThinButton23_Click(System::Object^ sender, System::E
 		String^ genre = bunifuTextbox3->text;
 		String^ pages = bunifuTextbox4->text;
 
-		MySqlCommand^ cmd = gcnew MySqlCommand("insert into book_info values('" + name + "','" + autor + "','" + genre + "','" + pages + "')", con);
-		// insert into book_info values('name','autor','genre','pages')
-		MySqlDataReader^ dr;
 		con->Open();
-		try
+		MySqlCommand^ cmds = gcnew MySqlCommand("select * from book_info where Name='" + name + "';", con);
+		MySqlDataReader^ drs;
+		drs = cmds->ExecuteReader();
+		int count = 0;
+		while (drs->Read())
 		{
-			dr = cmd->ExecuteReader();
-			bunifuTextbox1->text = "";
-			bunifuTextbox2->text = "";
-			bunifuTextbox3->text = "";
-			bunifuTextbox4->text = "";
-			MessageBox::Show("Книгу успішно додано!");
+			count += 1;
 		}
-		catch (Exception^ ex)
+		if (count == 1)
 		{
-			MessageBox::Show(ex->Message);
+			MessageBox::Show("Ваша книге вже існує в базі даних!\nСпробуйте іншу.");
+			con->Close();
 		}
-		con->Close();
-
-
-
+		else
+		{
+			MySqlCommand^ cmd = gcnew MySqlCommand("insert into book_info values('" + name + "','" + autor + "','" + genre + "','" + pages + "')", con);
+			// insert into book_info values('name','autor','genre','pages')
+			drs->Close();
+			con->Close();
+			MySqlDataReader^ dr;
+			con->Open();
+			try
+			{
+				dr = cmd->ExecuteReader();
+				bunifuTextbox1->text = "";
+				bunifuTextbox2->text = "";
+				bunifuTextbox3->text = "";
+				bunifuTextbox4->text = "";
+				MessageBox::Show("Книгу успішно додано!");
+			}
+			catch (Exception^ ex)
+			{
+				MessageBox::Show(ex->Message);
+			}
+			con->Close();
+		}
 	}
 	catch (Exception^ ex)
 	{

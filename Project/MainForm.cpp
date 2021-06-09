@@ -39,10 +39,18 @@ namespace Project {
         this->Hide();
     }
     System::Void MainForm::bunifuThinButton6_Click(System::Object^ sender, System::EventArgs^ e) {
-        rate = gcnew Rate();
-        rate->Show();
-        this->Hide();
-        //Project::Application::Exit();
+        System::Windows::Forms::DialogResult result = MessageBox::Show("Чи бажаєте ви оцінити програму?", "Завершення праці",
+            MessageBoxButtons::YesNo, MessageBoxIcon::Question);
+        if (result == System::Windows::Forms::DialogResult::Yes)
+        {
+            rate = gcnew Rate();
+            rate->Show();
+            this->Hide();
+        }
+        else
+        {
+            Project::Application::Exit();
+        }
     }
 }
 

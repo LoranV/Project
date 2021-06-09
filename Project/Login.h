@@ -468,25 +468,54 @@ private: System::Void bunifuThinButton22_Click(System::Object^ sender, System::E
 		String^ password = bunifuTextbox3->text;
 		String^ number = bunifuTextbox5->text;
 
-		MySqlCommand^ cmd = gcnew MySqlCommand("insert into reg_info values('" + login + "','" + password + "','" + email + "','" + number + "')", con);
-		MySqlDataReader^ dr;
 		con->Open();
-		try
-		{
-			dr = cmd->ExecuteReader();
-			bunifuTextbox6->text = "";
-			bunifuTextbox4->text = "";
-			bunifuTextbox3->text = "";
-			bunifuTextbox5->text = "";
-			MessageBox::Show("Ви успішно зареєструвалися! \n Поверніться назад для входу.");
-		}
-		catch (Exception^ ex)
-		{
-			MessageBox::Show(ex->Message);
-		}
-		con->Close(); //Don't forget to close the connection after Execute reader.
+		MySqlCommand^ cmd = gcnew MySqlCommand("select * from reg_info where Login='" + login + "';", con);
+		MySqlDataReader^ dr;
+		dr = cmd->ExecuteReader();
+		int count = 0;
+		if (bunifuTextbox4->text != "Login" && bunifuTextbox3->text != "Password" && bunifuTextbox6->text != "Email" && bunifuTextbox5->text != "Phone Number") {
+			while (dr->Read())
+			{
+				count += 1;
+			}
+			if (count == 1)
+			{
+				MessageBox::Show("Користувач з даним логіном вже існує!\nПовторіть спробу.");
+				con->Close();
+			}
+			else if (login == password) {
+				MessageBox::Show("Логін та пароль не можуть співпадати!\nПовторіть спробу.");
+			}
+			else if (number->Length > 12)
+			{
+				MessageBox::Show("Номер телефону вказано невірно!\nПовторіть спробу.");
+			}
+			else
+			{
+				dr->Close();
+				MySqlCommand^ cmds = gcnew MySqlCommand("insert into reg_info values('" + login + "','" + password + "','" + email + "','" + number + "')", con);
+				MySqlDataReader^ dr;
+				try
+				{
+					dr = cmds->ExecuteReader();
+					bunifuTextbox6->text = "";
+					bunifuTextbox4->text = "";
+					bunifuTextbox3->text = "";
+					bunifuTextbox5->text = "";
+					MessageBox::Show("Ви успішно зареєструвались!\nПоверніться назад для входу.");
+				}
+				catch (Exception^ ex)
+				{
+					MessageBox::Show(ex->Message);
+				}
+				con->Close(); //Don't forget to close the connection after Execute reader.
 
-
+			}
+		}
+		else
+		{
+			MessageBox::Show("Введіть ваші дані!");
+		}
 
 	}
 	catch (Exception^ ex)

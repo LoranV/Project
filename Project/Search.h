@@ -75,9 +75,6 @@ namespace Project {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuCustomDataGrid1))->BeginInit();
 			this->SuspendLayout();
-			// 
-			// panel1
-			// 
 			this->panel1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(170)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)));
@@ -91,9 +88,6 @@ namespace Project {
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(860, 497);
 			this->panel1->TabIndex = 1;
-			// 
-			// bunifuImageButton1
-			// 
 			this->bunifuImageButton1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->bunifuImageButton1->BackColor = System::Drawing::Color::Transparent;
 			this->bunifuImageButton1->Cursor = System::Windows::Forms::Cursors::Hand;
@@ -107,9 +101,6 @@ namespace Project {
 			this->bunifuImageButton1->TabStop = false;
 			this->bunifuImageButton1->Zoom = 0;
 			this->bunifuImageButton1->Click += gcnew System::EventHandler(this, &Search::bunifuImageButton1_Click);
-			// 
-			// bunifuCustomDataGrid1
-			// 
 			this->bunifuCustomDataGrid1->AllowUserToAddRows = false;
 			this->bunifuCustomDataGrid1->AllowUserToDeleteRows = false;
 			this->bunifuCustomDataGrid1->AllowUserToResizeColumns = false;
@@ -146,9 +137,6 @@ namespace Project {
 			this->bunifuCustomDataGrid1->RowHeadersBorderStyle = System::Windows::Forms::DataGridViewHeaderBorderStyle::None;
 			this->bunifuCustomDataGrid1->Size = System::Drawing::Size(860, 335);
 			this->bunifuCustomDataGrid1->TabIndex = 11;
-			// 
-			// button1
-			// 
 			this->button1->Location = System::Drawing::Point(634, 125);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
@@ -156,29 +144,20 @@ namespace Project {
 			this->button1->Text = L"Пошук";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &Search::button1_Click);
-			// 
-			// bunifuCustomTextbox1
-			// 
 			this->bunifuCustomTextbox1->BorderColor = System::Drawing::Color::SeaGreen;
-			this->bunifuCustomTextbox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular,
+			this->bunifuCustomTextbox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->bunifuCustomTextbox1->Location = System::Drawing::Point(105, 126);
 			this->bunifuCustomTextbox1->Multiline = true;
 			this->bunifuCustomTextbox1->Name = L"bunifuCustomTextbox1";
 			this->bunifuCustomTextbox1->Size = System::Drawing::Size(407, 21);
 			this->bunifuCustomTextbox1->TabIndex = 2;
-			// 
-			// comboBox1
-			// 
 			this->comboBox1->FormattingEnabled = true;
 			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(4) { L"Назва", L"Автор", L"Жанр", L"К-ть сторінок" });
 			this->comboBox1->Location = System::Drawing::Point(512, 126);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(125, 21);
 			this->comboBox1->TabIndex = 1;
-			// 
-			// bunifuCustomLabel1
-			// 
 			this->bunifuCustomLabel1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->bunifuCustomLabel1->AutoSize = true;
 			this->bunifuCustomLabel1->BackColor = System::Drawing::Color::Transparent;
@@ -190,9 +169,6 @@ namespace Project {
 			this->bunifuCustomLabel1->Size = System::Drawing::Size(172, 55);
 			this->bunifuCustomLabel1->TabIndex = 0;
 			this->bunifuCustomLabel1->Text = L"Пошук";
-			// 
-			// Search
-			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
@@ -218,7 +194,8 @@ namespace Project {
 		case 0: {
 			String^ constring1 = L"Server=127.0.0.1;Uid=root;Pwd=Konokrad15951;Database=reg_user";
 			MySqlConnection^ conDataBase1 = gcnew MySqlConnection(constring1);
-			MySqlCommand^ cmdDataBase1 = gcnew MySqlCommand("SELECT * FROM `reg_user`.`book_info` WHERE Name LIKE '%" + text + "%';", conDataBase1);
+			//MySqlCommand^ cmdDataBase1 = gcnew MySqlCommand("SELECT * FROM `reg_user`.`book_info` WHERE Name LIKE '%" + text + "%';", conDataBase1);
+			MySqlCommand^ cmdDataBase1 = gcnew MySqlCommand("SELECT * FROM `reg_user`.`book_info` WHERE Autor = 'Стівен' AND Pages>500", conDataBase1);
 			MySqlDataReader^ myReader1;
 
 			try
